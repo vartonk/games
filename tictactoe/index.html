@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <link rel='stylesheet' href='./tictactoe.css'>
+        <link rel='stylesheet' href='./screens.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
         <script src='./tictactoe.js'></script>
     </head>
     <body>
         <div id='startgameform'>
             <section class='gameform'>
-                <ul>
-                    <li>
-                        <label>Choose Side:</label>
-                        <button type='button' onclick='startGameAsX()'>X</button>
-                        <button type='button' onclick='startGameAsO()'>O</button>
-                    </li>
-                </ul>
+                <label>Choose Side</label>
+                <button type='button' onclick='startGameAsX()'>X</button>
+                <button type='button' onclick='startGameAsO()'>O</button>
             </section>
         </div>
         <section id='gamegridcontainer' class='gamegridcontainer'>
