@@ -1,0 +1,131 @@
+button {
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+.gameform {
+    border: 1px solid;
+    border-radius: 20px;
+    width: 50vw;
+    margin: 20px auto;
+}
+
+.gameform ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.gameform li{
+    margin: 20px;
+    text-align: center;
+}
+
+.gameform input {
+    padding: 10px 10px;
+    width: 10vw;
+    border-radius: 10px;
+}
+
+.gamegridcontainer {
+    display: none;
+    flex-direction: column;
+}
+
+.gamegrid {
+    width: 30vw;
+    height: 30vw;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-gap: 0;
+}
+
+.gamebox {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.gamebox:active {
+    background-color: rgb(196, 196, 196);
+}
+
+.gamescore {
+    margin: 10px auto;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.gamescore div {
+    padding: 30px;
+}
+
+.actionbuttons {
+    margin: 0 auto;
+    display: flex;
+}
+
+#countdownoverlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+#countdownoverlay h1 {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    top: 50%;
+    left: 50%;  
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+#gameendedoverlay {
+    display: none;
+    top: 50%;
+    left: 50%;  
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+#countdownoverlay h2 {
+    /* display: none; */
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+    /* border-radius: 50%; */
+    /* width: 40px; */
+    text-align: center;
+    /* top: 50%;
+    left: 50%;  
+    position: absolute;
+    transform: translate(-50%,-50%); */
+}
+
+.highlight {
+    background-color: #000;
+}
+
+.bomb {
+    background-color: #dc142f;
+}
+
+.danger {
+    background-color: #494949;
+}
+/* TODO: reuse button styling by creating a common style.
+        remove the blue border surrounding the butotn
+ */
+/* TODO: @media for small screen */

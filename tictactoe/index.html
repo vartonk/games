@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='./tictactoe.css'>
+        <script src='./tictactoe.js'></script>
+    </head>
+    <body>
+        <div id='startgameform'>
+            <section class='gameform'>
+                <ul>
+                    <li>
+                        <label>Choose Side:</label>
+                        <button type='button' onclick='startGameAsX()'>X</button>
+                        <button type='button' onclick='startGameAsO()'>O</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section id='gamegridcontainer' class='gamegridcontainer'>
+            <div class='gamegrid'>
+                <!--  -->
+            </div>
+            <div class='gamescore'>
+                <div>
+                    <label>Won:</label>
+                    <label id='scoreval'>0</label>
+                </div>
+                <div>
+                    <label>Draw:</label>
+                    <label id='missedval'>0</label>
+                </div>
+                <div>
+                    <label>Lost:</label>
+                    <label id='highscoreval'>0</label>
+                </div>
+            </div>
+            <div class='actionbuttons'>
+                <!--<button type='button' onclick='backtoform()'>Back</button>-->
+                <button type='button' onclick='restartgame()'>Restart</button>
+            </div>
+        </section>
+        <div id='countdownoverlay'>
+            <h1></h1>
+            <div id='gameendedoverlay'>
+                <button type='button' onclick='backtoform()'>Back</button>
+                <h2></h2>
+                <button type='button' onclick='restartgame()'>Restart</button>
+            </div>
+        </div>
+    </body>
+</html>
