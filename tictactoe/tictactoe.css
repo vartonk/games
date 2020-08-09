@@ -1,29 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+div#startgameform, #gamegridcontainer {
+    background: linear-gradient(to bottom, #cfe0fb , #d1d8e2);
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
-    padding: 20px 30px;
-    border-radius: 10px;
-    margin: 0 20px;
+    padding: 5px 20px;
+    border-radius: 7px;
+    margin: 5px 10px;
+    border: 1px solid #777;
+    background: #fff6;
+    font-size: 25px;
 }
+
 .gameform {
-    border: 1px solid;
-    border-radius: 20px;
-    width: 50vw;
-    margin: 20px auto;
-}
-
-.gameform ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-.gameform li{
-    margin: 20px;
+    border-radius: 15px;
+    width: 80%;
     text-align: center;
+    background: #fff6;
+    box-shadow: 0 0 15px #0003;
+    padding: 20px;
 }
 
-.gameform input {
-    padding: 10px 10px;
-    width: 10vw;
+.gameform label {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.gameform button {
     border-radius: 10px;
+    font-size: 35px;
 }
 
 .gamegridcontainer {
@@ -32,9 +55,8 @@ button {
 }
 
 .gamegrid {
-    width: 30vw;
-    height: 30vw;
-    margin: 0 auto;
+    width: 70vw;
+    height: 70vw;
     
     display: grid;
     grid-gap: 0;
@@ -42,7 +64,10 @@ button {
 
 .gamebox {
     box-sizing: border-box;
-    border: 1px solid #000;
+    border: 1px solid #777;
+    border-radius: 10px;
+    background: #fff6;
+    box-shadow: 0 0 10px #0003;
     cursor: pointer;
 }
 
@@ -58,7 +83,8 @@ button {
 }
 
 .gamescore div {
-    padding: 30px;
+    padding: 15px;
+    font-size: 20px;
 }
 
 .actionbuttons {

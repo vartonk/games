@@ -1,0 +1,42 @@
+@media screen and (min-width: 980px) and (orientation : landscape) {
+    
+    .gameform {
+        width: 40%;
+        padding: 30px;
+    }
+
+    .gamegridcontainer {
+        position: relative;
+    }
+
+    .gamegrid {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .gamescore, .actionbuttons {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .gamescore {
+        border: none;
+        left: 0;
+    }
+
+    .actionbuttons {
+        right: 0;
+    }
+
+    .gamescore div {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .actionbuttons button {
+        font-size: 20px;
+        padding: 10px 25px;
+        border-radius: 15px;
+    }
+}
