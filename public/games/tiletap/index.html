@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='./tiletap.css'>
+        <script src='./tiletap.js'></script>
+    </head>
+    <body>
+        <div id='startgameform'>
+            <section class='gameform'>
+                <ul>
+                    <li>
+                        <label>Grid Size:</label>
+                        <input id='gridsize' type='number' max='20' min='8' value='8' autofocus='true'></input>
+                    </li>
+                    <li>
+                        <button type='button' onclick='startgame()'>Play</button>
+                    </li>
+                </ul>
+            </section>
+            <section class='gameform'>
+                <ul>
+                    <li>
+                        <label>Your High Score:</label>
+                        <label id='highScore' type='number'>0</label>
+                    </li>
+                    <li>
+                        <button type='button' onclick="resetHighScore()">Reset High Score</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section id='gamegridcontainer' class='gamegridcontainer'>
+            <div class='gamegrid'>
+                <!--  -->
+            </div>
+            <div class='gamescore'>
+                <div>
+                    <label>Score:</label>
+                    <label id='scoreval'>0</label>
+                </div>
+                <div>
+                    <label>Missed:</label>
+                    <label id='missedval'>0</label>
+                </div>
+                <div>
+                    <label>High Score:</label>
+                    <label id='highscoreval'>0</label>
+                </div>
+            </div>
+            <div class='actionbuttons'>
+                <button type='button' onclick='backtoform()'>Back</button>
+                <button type='button' onclick='restartgame()'>Restart</button>
+            </div>
+        </section>
+        <div id='countdownoverlay'>
+            <h1></h1>
+            <div id='gameendedoverlay'>
+                <button type='button' onclick='backtoform()'>Back</button>
+                <h2></h2>
+                <button type='button' onclick='restartgame()'>Restart</button>
+            </div>
+        </div>
+    </body>
+</html>
